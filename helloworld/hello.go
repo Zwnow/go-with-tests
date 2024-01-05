@@ -7,5 +7,8 @@ func main() {
 }
 
 func Hello(name string) string {
+    if len(name) == 0 {
+        name = "world"
+    }
     return "Hello, " + name + "!"
 }
